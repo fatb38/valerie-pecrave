@@ -1,31 +1,40 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="header">
+    <h1>Valerie Pecrave</h1>
+    <h2>Directrice de campagne officelle du groupe Eight Sins</h2>
+    <h2 class="important">En appel à votre générosité</h2>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <div class="speech-container">
+    <div>
+      <img src="./assets/valoche.JPG" alt="Valerie Pecrave" width="300">
+    </div>
+    <div class="speech">
+      <h4>Le groupe Eight Sins a besoin de vous aujourd'hui pour boucler le budget de financement de son nouvel
+        album</h4>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.header {
+  margin-bottom: 2em;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.speech-container {
+  /*display: flex;*/
+  /*max-width: 1000px;*/
+  /*margin: 0 auto;*/
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.important {
+  color: #d9243c;
+}
+
+.speech {
+  margin: 0 2em;
 }
 </style>
