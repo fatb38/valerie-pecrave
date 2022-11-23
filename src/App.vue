@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import FacebookIcon from '~icons/mdi/facebook'
+import InstagramIcon from '~icons/mdi/instagram'
+import YoutubeIcon from '~icons/mdi/youtube'
+import TikTokIcon from '~icons/ic/baseline-tiktok'
 </script>
 
 <template>
   <header>
-    <h2 id="title" class="secondary-color">Valérie Pecrave</h2>
+    <h1 id="title" class="secondary-color">Valérie Pecrave</h1>
     <img class="logo" src="/logo-valoche.jpg" alt="logo" width="90">
   </header>
   <main>
@@ -22,20 +25,38 @@ import FacebookIcon from '~icons/mdi/facebook'
         <p class="bold">Le groupe Eight Sins a besoin de vous aujourd'hui pour boucler le budget de financement de son
           nouvel album.</p>
         <p class="bold">Valoche et toute son équipe de campagne font appel à vous, cher public, pour aider le groupe à
-          apporter une nouvelle fraicheur <span class="primary-color">Thrash Metal</span> dans cette scène tant malmenée
+          apporter une nouvelle fraicheur <span class="primary-color">Thrash Metal</span> dans cette scène tant
+          malmenée
           depuis la Covid Party
           2020-2021.</p>
-        <p class="bold">Pour que la France retrouve sa grandeur, et ses soirées circle pit, bagarre et bières, faites un
+        <p class="bold">Pour que la France retrouve sa grandeur, et ses soirées circle pit, bagarre et bières, faites
+          un
           don au groupe, vous ne serez pas déçu !</p>
+        <div class="link-icons">
+          <div>
+            <div>Suivez nous sur les réseaux sociaux</div>
+            <a href="https://facebook.com/eightsins">
+              <FacebookIcon class="icon facebook-icon-color"  />
+            </a>
+            <a href="https://instagram.com/eightsinshxc">
+              <InstagramIcon class="icon instagram-icon-color" />
+            </a>
+            <a href="https://youtube.com/eightsins">
+              <YoutubeIcon class="icon youtube-icon-color" />
+            </a>
+            <a href="https://tiktok.com/@eightsinshxc">
+              <TikTokIcon class="icon tiktok-icon-color" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <a href="https://facebook.com/eightsins">
-      <FacebookIcon class="icon" />
-    </a>
   </main>
 </template>
 
 <style scoped lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 header {
   display: flex;
   justify-content: space-between;
@@ -43,16 +64,19 @@ header {
   padding: 0 0 5px 1em;
   margin-bottom: 2em;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  font-family: 'Dancing Script', cursive;
+  background-color: #fff;
 
   #title {
-    font-size: 1.6em;
+    font-size: 2.5em;
+    margin: 0;
   }
 
   @media (min-width: 768px) {
     padding-inline: 2.5em;
 
     #title {
-      font-size: 2em;
+      font-size: 3em;
     }
   }
 }
@@ -84,19 +108,31 @@ main {
   }
 
   .speech {
+    display: flex;
+    flex-direction: column;
+
+    .link-icons {
+      display: flex;
+      place-items: center;
+      flex-grow: 1;
+      margin: 0 auto;
+    }
+
     @media (min-width: 768px) {
-      padding: 0 3em;
+      padding: 1em 3em;
     }
   }
 }
 
 .icon {
-  color: var(--secondary-color-main);
   font-size: 2.2em;
   transition: 100ms;
+  margin: 0.3em;
+  filter: grayscale(1);
+  color: grey;
 
   &:hover {
-    color: var(--secondary-color-light);
+    filter: grayscale(0);
   }
 }
 </style>

@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: #213547;
-  background-color: #ffffff;
+  background-color: #fafafa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,10 +33,7 @@ a:hover {
 
 body {
   margin: 0;
-  /*display: flex;*/
-  /*place-items: center;*/
   min-width: 320px;
-  /*min-height: 100vh;*/
 }
 
 h1 {
@@ -83,8 +80,20 @@ p {
   color: var(--secondary-color-main)
 }
 
-.light-text {
-  color: white;
+.instagram-icon-color:hover {
+  color: #E1306C !important;
+}
+
+.facebook-icon-color:hover {
+  color: #4267B2 !important;
+}
+
+.youtube-icon-color:hover {
+  color: #FF0000 !important;
+}
+
+.tiktok-icon-color:hover {
+  color: #69D9C0 !important;
 }
 
 .bold {
