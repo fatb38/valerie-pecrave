@@ -19,7 +19,7 @@ import TikTokIcon from '~icons/ic/baseline-tiktok'
     </a>
     <div class="speech-container">
       <div>
-        <img id="main-photo" src="/valoche.jpg" alt="Valerie Pecrave" width="300">
+        <img id="main-photo" src="/valoche.jpg" alt="Valerie Pecrave" width="310">
       </div>
       <div class="speech">
         <p class="bold">Le groupe Eight Sins a besoin de vous aujourd'hui pour boucler le budget de financement de son
@@ -55,8 +55,6 @@ import TikTokIcon from '~icons/ic/baseline-tiktok'
 </template>
 
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-
 header {
   display: flex;
   justify-content: space-between;
@@ -105,6 +103,10 @@ main {
   #main-photo {
     border-radius: 12px;
     box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    @media (min-width: 768px) {
+      margin-right: 30px;
+    }
   }
 
   .speech {
