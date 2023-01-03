@@ -2,6 +2,7 @@
 import FacebookIcon from '~icons/mdi/facebook'
 import InstagramIcon from '~icons/mdi/instagram'
 import YoutubeIcon from '~icons/mdi/youtube'
+import VideoOutline from '~icons/mdi/video-outline'
 import TikTokIcon from '~icons/ic/baseline-tiktok'
 </script>
 
@@ -14,9 +15,17 @@ import TikTokIcon from '~icons/ic/baseline-tiktok'
     <h2>Directrice de campagne officielle du groupe Eight Sins</h2>
     <h2 class="primary-color">En appel à votre générosité</h2>
 
-    <a href="#">
-      <button class="button" role="button">FAIRE UN DON</button>
-    </a>
+    <div class="links-container">
+      <a href="#">
+        <button class="button primary">FAIRE UN DON</button>
+      </a>
+      <a class="speech-link" href="https://youtu.be/HWAa7i3JdA0" rel="noopener" target="_blank">
+        <button class="button">
+          <VideoOutline class="speech-icon" />
+          SON DISCOURS
+        </button>
+      </a>
+    </div>
     <div class="speech-container">
       <div>
         <img id="main-photo" src="/valoche.jpg" alt="Valerie Pecrave" width="310">
@@ -36,7 +45,7 @@ import TikTokIcon from '~icons/ic/baseline-tiktok'
           <div>
             <div>Suivez nous sur les réseaux sociaux</div>
             <a href="https://facebook.com/eightsins">
-              <FacebookIcon class="icon facebook-icon-color"  />
+              <FacebookIcon class="icon facebook-icon-color" />
             </a>
             <a href="https://instagram.com/eightsinshxc">
               <InstagramIcon class="icon instagram-icon-color" />
@@ -91,6 +100,41 @@ main {
     right: 3em;
   }
 }
+
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button.primary {
+  background-color: var(--primary-color-main);
+  color: white;
+  border-color: var(--primary-color-main);
+  margin-right: 20px;
+
+  &:hover {
+    background-color: var(--primary-color-dark);
+  }
+}
+
+.speech-link {
+  display: flex;
+  justify-content: center;
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .speech-icon {
+      margin-right: 10px;
+      font-size: 18px;
+      color: var(--secondary-color-main);
+    }
+  }
+}
+
 
 .speech-container {
   max-width: 1080px;
