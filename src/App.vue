@@ -28,7 +28,7 @@ import TikTokIcon from '~icons/ic/baseline-tiktok'
     </div>
     <div class="speech-container">
       <div>
-        <img id="main-photo" src="/valoche.jpg" alt="Valerie Pecrave" width="310">
+        <img id="main-photo" src="/valoche-profile.jpg" alt="Valerie Pecrave" width="310">
       </div>
       <div class="speech">
         <p class="bold">Le groupe Eight Sins a besoin de vous aujourd'hui pour boucler le budget de financement de son
@@ -105,6 +105,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .button.primary {
@@ -138,7 +139,7 @@ main {
 
 .speech-container {
   max-width: 1080px;
-  margin: 3em auto;
+  margin: 35px auto;
 
   @media (min-width: 768px) {
     display: flex;
