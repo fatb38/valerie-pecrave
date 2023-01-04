@@ -16,7 +16,7 @@ import TikTokIcon from '~icons/ic/baseline-tiktok'
     <h2 class="primary-color">En appel à votre générosité</h2>
 
     <div class="links-container">
-      <a href="#">
+      <a href="https://www.kisskissbankbank.com/fr/projects/eightsins">
         <button class="button primary">FAIRE UN DON</button>
       </a>
       <a class="speech-link" href="https://youtu.be/HWAa7i3JdA0" rel="noopener" target="_blank">
@@ -31,7 +31,7 @@ import TikTokIcon from '~icons/ic/baseline-tiktok'
         <img id="main-photo" src="/valoche-profile.jpg" alt="Valerie Pecrave" width="310">
       </div>
       <div class="speech">
-        <p class="bold">Le groupe Eight Sins a besoin de vous aujourd'hui pour boucler le budget de financement de son
+        <p class="bold">Le groupe <span class="primary-color">Eight Sins</span> a besoin de vous aujourd'hui pour boucler le budget de financement de son
           nouvel album.</p>
         <p class="bold">Valoche et toute son équipe de campagne font appel à vous, cher public, pour aider le groupe à
           apporter une nouvelle fraicheur <span class="primary-color">Thrash Metal</span> dans cette scène tant
