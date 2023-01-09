@@ -3,6 +3,8 @@ import FacebookIcon from '~icons/mdi/facebook'
 import InstagramIcon from '~icons/mdi/instagram'
 import TikTokIcon from '~icons/ic/baseline-tiktok'
 import YoutubeIcon from '~icons/mdi/youtube'
+
+const date = new Date()
 </script>
 
 <template>
@@ -61,6 +63,9 @@ import YoutubeIcon from '~icons/mdi/youtube'
       </div>
     </div>
   </main>
+  <footer>
+    <div>Eight Sins {{ date.getFullYear() }} ©</div>
+  </footer>
 </template>
 
 <style scoped lang="scss">
@@ -190,6 +195,17 @@ main {
 
   &:hover {
     filter: grayscale(0);
+  }
+}
+
+footer {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+  div {
+    font-size: 14px;
+    font-style: italic;
   }
 }
 </style>

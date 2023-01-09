@@ -45,6 +45,11 @@ p {
   font-size: 1.1em;
 }
 
+#app {
+  padding: 0;
+  text-align: center;
+}
+
 .primary-color {
   color: var(--primary-color-main);
 }
@@ -71,11 +76,6 @@ p {
 
 .bold {
   font-weight: bold;
-}
-
-#app {
-  padding: 0;
-  text-align: center;
 }
 
 /*@media (prefers-color-scheme: light) {*/
