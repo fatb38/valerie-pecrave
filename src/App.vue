@@ -22,16 +22,15 @@ import YoutubeIcon from '~icons/mdi/youtube'
     <div class="speech-container">
       <div class="media-container">
         <video
-            src="/speech-valerie.mp4"
-            type="video/mp4"
-            class="main-media"
-            playsinline
-            controls
-            poster="/valoche-profile.jpg"
+          src="/speech-valerie.mp4"
+          class="main-media"
+          playsinline
+          controls
         />
       </div>
       <div class="speech">
-        <p class="bold">Le groupe <a href="https://eightsins.fr" class="primary-color bold">Eight Sins</a> a besoin de vous aujourd'hui pour
+        <p class="bold">Le groupe <a href="https://eightsins.fr" class="primary-color bold">Eight Sins</a> a besoin de
+          vous aujourd'hui pour
           boucler le budget de financement de son
           nouvel album.</p>
         <p class="bold">Valoche et toute son équipe de campagne font appel à vous, cher public, pour aider le groupe à
@@ -45,9 +44,6 @@ import YoutubeIcon from '~icons/mdi/youtube'
         <div class="link-icons">
           <div>
             <div>Suivez nous sur les réseaux sociaux</div>
-            <a href="https://eightsins.fr">
-              <WebIcon class="icon website-icon-color" />
-            </a>
             <a href="https://facebook.com/eightsins">
               <FacebookIcon class="icon facebook-icon-color" />
             </a>
@@ -150,7 +146,6 @@ main {
   }
 
   .media-container {
-
     .main-media {
       max-width: 100%;
       border-radius: 12px;
@@ -181,7 +176,7 @@ main {
 
     @media (min-width: 768px) {
       padding: 1em 3em;
-      width: 60%;
+      width: 70%;
     }
   }
 }
