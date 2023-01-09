@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import FacebookIcon from '~icons/mdi/facebook'
 import InstagramIcon from '~icons/mdi/instagram'
-import YoutubeIcon from '~icons/mdi/youtube'
-import VideoOutline from '~icons/mdi/video-outline'
 import TikTokIcon from '~icons/ic/baseline-tiktok'
+import YoutubeIcon from '~icons/mdi/youtube'
 </script>
 
 <template>
@@ -19,19 +18,20 @@ import TikTokIcon from '~icons/ic/baseline-tiktok'
       <a href="https://www.kisskissbankbank.com/fr/projects/eightsins">
         <button class="button primary">FAIRE UN DON</button>
       </a>
-      <a class="speech-link" href="https://youtu.be/HWAa7i3JdA0" rel="noopener" target="_blank">
-        <button class="button">
-          <VideoOutline class="speech-icon" />
-          SON DISCOURS
-        </button>
-      </a>
     </div>
     <div class="speech-container">
-      <div>
-        <img id="main-photo" src="/valoche-profile.jpg" alt="Valerie Pecrave" width="310">
+      <div class="media-container">
+        <video
+          src="/speech-valerie.mp4"
+          class="main-media"
+          playsinline
+          controls
+        />
       </div>
       <div class="speech">
-        <p class="bold">Le groupe <span class="primary-color">Eight Sins</span> a besoin de vous aujourd'hui pour boucler le budget de financement de son
+        <p class="bold">Le groupe <a href="https://eightsins.fr" class="primary-color bold">Eight Sins</a> a besoin de
+          vous aujourd'hui pour
+          boucler le budget de financement de son
           nouvel album.</p>
         <p class="bold">Valoche et toute son équipe de campagne font appel à vous, cher public, pour aider le groupe à
           apporter une nouvelle fraicheur <span class="primary-color">Thrash Metal</span> dans cette scène tant
@@ -145,12 +145,21 @@ main {
     display: flex;
   }
 
-  #main-photo {
-    border-radius: 12px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  .media-container {
+    .main-media {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
-    @media (min-width: 768px) {
-      margin-right: 30px;
+      @media (min-width: 768px) {
+        margin-right: 30px;
+      }
+
+      @media (max-width: 768px) {
+        video {
+          max-width: 100%;
+        }
+      }
     }
   }
 
@@ -167,6 +176,7 @@ main {
 
     @media (min-width: 768px) {
       padding: 1em 3em;
+      width: 70%;
     }
   }
 }

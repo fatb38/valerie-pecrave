@@ -1,6 +1,10 @@
 name: Build and deploy
 
-on: push
+on:
+  push:
+    branches: [ 'main' ]
+  pull_request:
+    branches: [ 'main' ]
 
 jobs:
   build_and_deploy:
@@ -18,6 +22,7 @@ jobs:
       - run: npm run build
 
       - name: Deploy
+        if: github.event_name == 'push' && github.ref_name == 'main'
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           server: ${{ secrets.SERVER }}
