@@ -1,3 +1,4 @@
+[![Build and deploy](https://github.com/fatb38/valerie-pecrave/actions/workflows/ci.yml/badge.svg)](https://github.com/fatb38/valerie-pecrave/actions/workflows/ci.yml)
 # 🫵 EIGHT SINS NEEDS YOU !! 🫵
 
 ### Les bonnes résolutions 2023 : on vous sort un nouvel album cette année 🎉🎉
