@@ -11,3 +11,5 @@ https://www.kisskissbankbank.com/fr/projects/eightsins
 
 On compte sur votre soutien, il en va de la survie de la scène metal au complet 🫰🏻  
 En vous remerciant ❤️
+
+![Valoche](public/logo-eightsins-campagne.jpg)

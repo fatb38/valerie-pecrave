@@ -1,7 +1,17 @@
 {
   "name": "valerie-pecrave",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.1.0",
+  "author": {
+    "email": "arno.tgh@gmail.com",
+    "name": "fatb38",
+    "url": "https://github.com/fatb38"
+  },
+  "description": "Eight Sins needs you for its crowdfunding",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatb38/valerie-pecrave.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
