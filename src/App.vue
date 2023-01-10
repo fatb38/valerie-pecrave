@@ -16,11 +16,10 @@ const date = new Date()
     <h2>Directrice de campagne officielle du groupe Eight Sins</h2>
     <h2 class="primary-color">En appel à votre générosité</h2>
 
-    <div class="links-container">
-      <a href="https://www.kisskissbankbank.com/fr/projects/eightsins">
-        <button class="button primary">FAIRE UN DON</button>
-      </a>
-    </div>
+    <a href="https://www.kisskissbankbank.com/fr/projects/eightsins">
+      <button class="button primary">FAIRE UN DON</button>
+    </a>
+
     <div class="speech-container">
       <div class="media-container">
         <video
@@ -106,18 +105,11 @@ main {
   }
 }
 
-.links-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-}
-
 .button.primary {
   background-color: var(--primary-color-main);
   color: white;
   border-color: var(--primary-color-main);
-  margin-right: 20px;
+  margin-top: 10px;
 
   &:hover {
     background-color: var(--primary-color-dark);
