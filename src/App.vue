@@ -22,11 +22,15 @@ const date = new Date()
 
     <div class="speech-container">
       <div class="media-container">
-        <video
-          src="/speech-valerie.mp4"
+        <iframe
           class="main-media"
-          playsinline
-          controls
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/LnI6b-_J9Vc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
         />
       </div>
       <div class="speech">
@@ -143,8 +147,11 @@ main {
   }
 
   .media-container {
+    display: flex;
+    align-items: center;
+
     .main-media {
-      max-width: 100%;
+      //max-width: 100%;
       border-radius: 12px;
       box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
